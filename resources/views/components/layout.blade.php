@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     <title>Willows</title>
 </head>
-<body>
+<body class="bg-slate-200">
 {{$slot}}
 </body>
 </html>
