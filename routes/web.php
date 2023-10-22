@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('', fn () => to_route('menu.index'));
-Route::resource('menu', MenuController::class);
+Route::resource('menu', MenuController::class)->only('index', 'show');

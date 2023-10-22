@@ -34,9 +34,9 @@ class MenuController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Menu $menu)
     {
-        //
+        return view('menu.show', ['menu' => $menu]);
     }
 
     /**
