@@ -8,7 +8,7 @@
     </nav>
 
     <!-- Menu's -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4 px-4">
         @forelse ($menus as $menu)
         <x-menu-card :$menu></x-menu-card>
         @empty
