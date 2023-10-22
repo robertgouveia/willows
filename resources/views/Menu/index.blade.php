@@ -8,15 +8,19 @@
         <div class="w-full bg-white rounded-md border border-slate-300 p-3 lg:w-[400px]">
             <div class=" h-full  flex flex-col lg:flex-row">
                 <div class="w-full flex flex-col items-center">
-                    <h1 class="text-center text-lg font-medium">Opening Times</h1>
-                    <hr class="w-full h-[2px] my-2">
-                    <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Monday:</span> 0930 - 1600</h4>
-                    <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Tuesday:</span> 0930 - 1600</h4>
-                    <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Wednesday:</span> 0930 - 1600</h4>
-                    <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Thursday:</span> 0930 - 1600</h4>
-                    <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Friday:</span> 0930 - 1600</h4>
-                    <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Saturday:</span> 0930 - 1600</h4>
-                    <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Sunday:</span> 0930 - 1600</h4>
+                    <div class="w-full">
+                        <h1 class="text-center text-lg font-medium">Opening Times</h1>
+                        <hr class="w-full h-[2px] my-2">
+                    </div>
+                    <div class="w-full h-full flex flex-col items-center justify-center pb-3">
+                        <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Monday:</span> 10.00 - 16.00</h4>
+                        <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Tuesday:</span> 10.00 - 16.00</h4>
+                        <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Wednesday:</span> 10.00 - 16.00</h4>
+                        <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Thursday:</span> 10.00 - 16.00</h4>
+                        <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Friday:</span> 10.00 - 16.00</h4>
+                        <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Saturday:</span> 10.00 - 16.00</h4>
+                        <h4 class="font-bold text-lg text-slate-500"><span class="text-md font-normal text-black">Sunday:</span> 10.00 - 16.00</h4>
+                    </div>
                 </div>
             </div>
         </div>

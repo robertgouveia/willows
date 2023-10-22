@@ -12,7 +12,7 @@
         <h1 class="text-2xl font-medium">Willows</h1>
         <div class="flex items-center space-x-4">
             <p class="text-xs text-slate-500">Call to book</p>
-            <button class="px-3 py-1 border border-slate-300 rounded-md font-medium hover:bg-slate-200">Call</button>
+            <a href="tel:+441283810620" class="px-3 py-1 border border-slate-300 rounded-md font-medium hover:bg-slate-200">Call</a>
         </div>
     </nav>
 {{$slot}}
