@@ -1,5 +1,4 @@
 <x-layout>
-
     <!-- Main Image -->
     <div class="px-4 my-4 flex justify-center">
         <img src="{{URL::to('Images/Image1.jpg')}}" alt="" class="object-cover w-full h-[300px] max-w-[1400px] rounded-md border border-slate-300">
@@ -36,9 +35,7 @@
             <h1 class="text-sm px-3 py-1 border border-slate-300 rounded-md font-medium hover:bg-slate-100">Menu List Below</h1>
             <p class="text-slate-500 text-sm">Click Show</p>
         </div>
-
         <!-- Menu's -->
-
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-1 gap-y-2 max-w-[1400px]">
             @forelse ($menus as $menu)
             <x-menu-card :$menu>
@@ -49,5 +46,4 @@
             @endforelse
         </div>
     </div>
-
 </x-layout>
