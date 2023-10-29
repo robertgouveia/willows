@@ -36,7 +36,7 @@
             <p class="text-slate-500 text-sm">Click Show</p>
         </div>
         <!-- Menu's -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-1 gap-y-2 max-w-[1400px]">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-1 gap-y-2 max-w-[1400px] w-full">
             @forelse ($menus as $menu)
             <x-menu-card :$menu>
                 <x-link-button :href="route('menu.show', $menu)">Show</x-link-button>
