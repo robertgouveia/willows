@@ -12,7 +12,7 @@ class Menu extends Model
 
     protected $fillable = ['title', 'description'];
 
-    public function catagories(): HasMany
+    public function categories(): HasMany
     {
         return $this->hasMany(Category::class);
     }

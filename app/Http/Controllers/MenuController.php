@@ -37,7 +37,7 @@ class MenuController extends Controller
      */
     public function show(Menu $menu)
     {
-        return view('Menu.show', ['menu' => $menu, 'categories' => Category::where('menu_id', $menu->id)->get()]);
+        return view('Menu.show', ['menu' => $menu, 'categories' => $menu->categories()->with('items')->get()]);
     }
 
     /**
