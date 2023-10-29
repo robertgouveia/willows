@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Menu;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class MenuController extends Controller
@@ -36,7 +37,7 @@ class MenuController extends Controller
      */
     public function show(Menu $menu)
     {
-        return view('Menu.show', ['menu' => $menu]);
+        return view('Menu.show', ['menu' => $menu, 'categories' => Category::where('menu_id', $menu->id)->get()]);
     }
 
     /**

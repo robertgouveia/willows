@@ -1,7 +1,11 @@
 <x-layout>
     <div class="px-4">
         <x-menu-card :$menu>
-            <h1 class="w-full text-center text-2xl py-4 font-bold text-slate-500">No items</h1>
+            @forelse ($categories as $category)
+                <h1>{{$category->name}}</h1>
+            @empty
+                <h1>No Categories</h1>
+            @endforelse
         </x-menu-card>
     </div>
 </x-layout>
