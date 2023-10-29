@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\MenuController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CategoryController;
 
 Route::resource('home', HomeController::class)->only('index');
@@ -20,3 +21,5 @@ Route::delete('auth', [AuthController::class, 'destroy'])->name('auth.destroy');
 
 Route::resource('category', CategoryController::class)->only('index');
 Route::resource('item', ItemController::class)->only('index');
+
+Route::resource('admin', AdminController::class)->only('index');
