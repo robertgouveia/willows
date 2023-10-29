@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Menu;
-use App\Models\Category;
 use Illuminate\Http\Request;
 
 class MenuController extends Controller
@@ -13,7 +12,12 @@ class MenuController extends Controller
      */
     public function index()
     {
-        return view('Menu.index', ['menus' => Menu::all()]);
+        $admin = null;
+        if (auth()->user()) {
+            $user = auth()->user();
+            $admin = $user->admin;
+        }
+        return view('Menu.index', ['menus' => Menu::all(), 'admin' => $admin]);
     }
 
     /**

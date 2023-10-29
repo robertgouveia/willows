@@ -1,5 +1,8 @@
 <x-layout>
     <!-- Main Image -->
+    @if($admin)
+        Admin Account
+    @endif
     <div class="px-4 my-4 flex justify-center">
         <img src="{{URL::to('Images/Image1.jpg')}}" alt="" class="object-cover w-full h-[300px] max-w-[1400px] rounded-md border border-slate-300">
     </div>

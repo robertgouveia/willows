@@ -1,7 +1,7 @@
 <x-layout>
-    <div class="w-full flex justify-center">
+    <div class="w-full flex justify-center px-4">
         <div class="bg-white w-full max-w-[800px] rounded-md border border-slate-300">
-            <h1 class="text-center text-3xl font-medium text-slate-600 my-3 pb-4 border-b">Sign in to your account</h1>
+            <h1 class="text-center text-2xl font-medium text-slate-600 my-3 pb-4 border-b">Sign in to your account</h1>
             <form action="{{route('auth.store')}}" method="POST" class="w-full flex flex-col">
                 @csrf
                 <div class="flex flex-col px-4">
